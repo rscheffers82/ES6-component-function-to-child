@@ -1,6 +1,8 @@
 body {
-  background-image: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fhdwallpaperia.com%2Fwp-content%2Fuploads%2F2014%2F01%2FUnderwater-Wallpaper-Image-Picture.jpg&f=1);
+  /*background-image: url(https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fhdwallpaperia.com%2Fwp-content%2Fuploads%2F2014%2F01%2FUnderwater-Wallpaper-Image-Picture.jpg&f=1);*/
+  background-image: url(../images/ocean-background.jpg);
   background-color: #fafafc;
+  background-size: cover;
   font-size: 1.1rem;
 }
 body::after {
