@@ -1,3 +1,3 @@
-# Test Driven Development learning repo
+# ES6 example of parent and child container - function exchange
 
-Interested? See more of my work at [royscheffers.com](http://royscheffers.com)
+Like what you see... you'll find more of my work at [royscheffers.com](http://royscheffers.com)
