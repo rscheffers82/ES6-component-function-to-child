@@ -6,14 +6,17 @@ class ViewAnnotations extends Component {
     // declare state if needed
   }
   render() {
-    // const output = props.comments.map( comment => <li key={comment}>{comment}</li>);
-    const output = () => {
-      return('hello');
+    var renderMessage = () => {
+      if (this.props.value) {
+        return <div>button -{this.props.value}- was clicked...</div>
+      } else {
+        return <div>No button is clicked yet...</div>
+      }
     }
 
     return (
       <div>
-        Which button was clicked...
+        {renderMessage()}
       </div>
     );
   }

@@ -7,24 +7,26 @@ class ToggleAnnotations extends Component {
     this.state = {
       open: false,
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(value) {
+  onClick(value) {
     const val = value.target;
-    console.log(val);
+    const data = val.getAttribute("data-value");
+    // document.querySelector('.container'));
+    console.log('log from child: ', data);
+    this.props.onClick(data);
   }
   render() {
     return (
       <div>
         <div>
-          <button onClick={this.handleClick} data-value="1">
+          <button onClick={this.onClick.bind(this)} data-value="1">
             View annotation
           </button>
         </div>
 
         <div>
-          <button onClick={this.handleClick}  data-value="2">
+          <button onClick={this.onClick.bind(this)} data-value="2">
             Write annotation
           </button>
         </div>
