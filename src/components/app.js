@@ -16,7 +16,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main">
         <ToggleAnnotations onClick={this.handleClick}/>
         <ViewAnnotations value={this.state.click}/>
       </div>

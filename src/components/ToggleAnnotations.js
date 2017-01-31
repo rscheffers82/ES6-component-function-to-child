@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 class ToggleAnnotations extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      open: false,
-    };
   }
 
   onClick(value) {
@@ -20,13 +16,11 @@ class ToggleAnnotations extends Component {
     return (
       <div>
         <div>
-          <button onClick={this.onClick.bind(this)} data-value="1">
+          <button onClick={this.onClick.bind(this)} data-value="view">
             View annotation
           </button>
-        </div>
 
-        <div>
-          <button onClick={this.onClick.bind(this)} data-value="2">
+          <button onClick={this.onClick.bind(this)} data-value="write">
             Write annotation
           </button>
         </div>

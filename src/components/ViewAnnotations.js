@@ -8,14 +8,14 @@ class ViewAnnotations extends Component {
   render() {
     var renderMessage = () => {
       if (this.props.value) {
-        return <div>button -{this.props.value}- was clicked...</div>
+        return <div><strong>{this.props.value}</strong> was clicked...</div>
       } else {
         return <div>No button is clicked yet...</div>
       }
     }
 
     return (
-      <div>
+      <div className='message'>
         {renderMessage()}
       </div>
     );
